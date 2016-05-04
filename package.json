@@ -1,5 +1,5 @@
 {
-  "name": "workspace",
+  "name": "smalldemo",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -32,7 +32,10 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "test": "karma start test/karma.conf.js"
+  },
   "dependencies": {
-    "fullpage.js": "^2.7.8"
+    "jasmine-core": "^2.4.1"
   }
 }
