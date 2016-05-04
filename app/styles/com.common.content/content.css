@@ -63,6 +63,8 @@
 
 	background-color: rgba(174, 238, 238, .2);
 	border-radius:10px;
+
+  overflow: scroll;
 }
 
 #web-wb #content-wb .page1 .row-bottom .kills h1{
