@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce3e9df9-77a2-467d-b596-2421e2811b73" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/com.wb.init/init.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/scripts/con.init/init.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/.bowerrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jscsrc" afterPath="$PROJECT_DIR$/.jscsrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="$PROJECT_DIR$/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/com.configs/app.js" afterPath="$PROJECT_DIR$/app/scripts/com.configs/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/com.configs/route.config.js" afterPath="$PROJECT_DIR$/app/scripts/com.configs/route.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/com.wb.common.content/app.js" afterPath="$PROJECT_DIR$/app/scripts/com.wb.common.content/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/com.wb.common.content/controllers/contetnCtrl.js" afterPath="$PROJECT_DIR$/app/scripts/com.wb.common.content/controllers/contetnCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/com.wb.common.head/app.js" afterPath="$PROJECT_DIR$/app/scripts/com.wb.common.head/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/com.wb.common.head/controller/head.controller.js" afterPath="$PROJECT_DIR$/app/scripts/com.wb.common.head/controller/head.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/com.wb.common.head/directives/head.directives.js" afterPath="$PROJECT_DIR$/app/scripts/com.wb.common.head/directives/head.directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/com.common.content/content.css" afterPath="$PROJECT_DIR$/app/styles/com.common.content/content.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/com.common.head/head.css" afterPath="$PROJECT_DIR$/app/styles/com.common.head/head.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/com.wb.common.content/content.html" afterPath="$PROJECT_DIR$/app/views/com.wb.common.content/content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/com.wb.common.head/head.html" afterPath="$PROJECT_DIR$/app/views/com.wb.common.head/head.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/scripts/com.wb.common.content/configs/fullpage.config.js" afterPath="$PROJECT_DIR$/app/scripts/com.configs/fullpage.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Hass.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,14 +25,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="content.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="content.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/com.wb.common.content/content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="460">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1239">
+              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <folding>
+                <marker date="1462457397121" expanded="true" signature="1548:1701" placeholder="..." />
+                <marker date="1462457397121" expanded="true" signature="1641:1669" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -95,6 +98,7 @@
         <option value="$PROJECT_DIR$/app/views/com.wb.common.content/content.html" />
         <option value="$PROJECT_DIR$/app/styles/com.common.content/content.css" />
         <option value="$PROJECT_DIR$/app/views/com.wb.common.head/head.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -108,8 +112,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="300" />
-    <option name="y" value="6" />
+    <option name="x" value="533" />
+    <option name="y" value="43" />
     <option name="width" value="1447" />
     <option name="height" value="1000" />
   </component>
@@ -311,18 +315,18 @@
       <option name="presentableId" value="Default" />
       <updated>1462450047201</updated>
       <workItem from="1462450053779" duration="3867000" />
-      <workItem from="1462457943249" duration="7000" />
+      <workItem from="1462457943249" duration="1020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3874000" />
+    <option name="totallyTimeSpent" value="4887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="300" y="6" width="1447" height="1000" extended-state="0" />
-    <editor active="false" />
+    <frame x="533" y="43" width="1447" height="1000" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494759" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -422,13 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/com.configs/fullpage.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-820">
@@ -464,11 +461,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/com.wb.common.content/content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="460">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1239">
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <marker date="1462457397121" expanded="true" signature="1548:1701" placeholder="..." />
+            <marker date="1462457397121" expanded="true" signature="1641:1669" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="96" selection-start-line="14" selection-start-column="96" selection-end-line="14" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>
