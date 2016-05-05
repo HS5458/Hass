@@ -10,21 +10,21 @@
 'use strict';
 
 (function () {
-	var contentCtrl = function ($timeout,contentFullpageConfig) {
-		/**
-		 * fullpage.js 使用
-		 */
-		$timeout(function(){
-			$("#content-wb").fullpage(contentFullpageConfig.config)
-		});
-		/**
-		 * 动画展示
-		 */
-		
-	};
+    var contentCtrl = function ($timeout,contentFullpageConfig) {
+      /**
+       * fullpage.js 使用
+       */
+      $timeout(function(){
+        $("#web_wb").fullpage(contentFullpageConfig.config)
+      });
+      /**
+       * 动画展示
+       */
 
-	contentCtrl.$inject = ['$timeout','contentFullpageConfig'];
+    };
 
-	angular.module('contentCtrl',[])
-		.controller('contentCtrl',contentCtrl);
+    contentCtrl.$inject = ['$timeout','contentFullpageConfig'];
+
+    angular.module('contentCtrl',[])
+      .controller('contentCtrl',contentCtrl);
 })();

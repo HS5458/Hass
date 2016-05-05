@@ -10,21 +10,21 @@
  */
 
 (function(){
-	angular
-		.module('hassApp', [
-			'ngAnimate',
-			'ngAria',
-			'ngCookies',
-			'ngMessages',
-			'ngResource',
-			'ngSanitize',
-			'ngTouch',
-			'ui.router',
-			//config
-			'configApp',
-			//content
-			'contentApp',
-			//NAV
-			'headApp'
-		]);
+    angular
+      .module('hassApp', [
+        'ngAnimate',
+        'ngAria',
+        'ngCookies',
+        'ngMessages',
+        'ngResource',
+        'ngSanitize',
+        'ngTouch',
+        'ui.router',
+        //config
+        'configApp',
+        //content
+        'contentApp',
+        //NAV
+        'headApp'
+      ]);
 })();

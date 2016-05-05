@@ -1,4 +1,4 @@
-#head-wb{
+#head_wb{
 	position:absolute;
 	top:0;
 	left:0;
@@ -9,7 +9,7 @@
 	z-index:100;
 }
 
-#head-wb .img-wb{
+#head_wb .img-wb{
 	float:left;
 	width:50px;
 	height:50px;
@@ -19,12 +19,12 @@
 	overflow: hidden;
 }
 
-#head-wb .img-wb img{
+#head_wb .img-wb img{
 	width:100%;
 	height:100%;
 }
 
-#head-wb .name-wb{
+#head_wb .name-wb{
 	float:left;
 	width:60px;
 	height:20px;
@@ -37,18 +37,18 @@
 	text-align:center;
 }
 
-#head-wb #nav-wb{
+#head_wb #nav-wb{
 	float:right;
 	width:40%;
 	height:60px;
 }
 
-#head-wb #nav-wb ul{
+#head_wb #nav-wb ul{
 	width:100%;
 	height:60px;
 	list-style-type: none;
 }
-#head-wb #nav-wb ul li{
+#head_wb #nav-wb ul li{
 	float: left;
 	width:25%;
 	height:60px;
@@ -62,6 +62,6 @@
 
 	cursor:pointer;
 }
-#head-wb #nav-wb ul li:hover{
+#head_wb #nav-wb ul li:hover{
 	box-shadow:inset 0 0 40px 40px rgba(204, 253, 51, 0.6);
 }

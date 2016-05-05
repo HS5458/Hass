@@ -11,9 +11,9 @@
 'use strict';
 (function(){
 
-	angular
-		.module('headApp',[
-			'headerDirective',
-			'headerCtrl'
-		]);
+    angular
+      .module('headApp',[
+        'headerDirective',
+        'headerCtrl'
+      ]);
 })();

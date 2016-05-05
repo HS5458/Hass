@@ -10,14 +10,14 @@
 'use strict';
 
 (function(){
-	var headerCtrl = function () {
+    var headerCtrl = function () {
 
-	};
+    };
 
-	headerCtrl.$inject = [];
+    headerCtrl.$inject = [];
 
-	angular
-		.module('headerCtrl',[])
-		.controller('headerCtrl',headerCtrl);
+    angular
+      .module('headerCtrl',[])
+      .controller('headerCtrl',headerCtrl);
 
 })();

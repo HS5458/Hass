@@ -10,9 +10,8 @@
 
 (function () {
 
-	angular.module('contentApp',[
-		'contentFullpageConfig',
-		'contentCtrl'
-	]);
-	
+    angular.module('contentApp',[
+      'contentCtrl'
+    ]);
+
 })();

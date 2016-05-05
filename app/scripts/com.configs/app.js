@@ -11,8 +11,9 @@
 
 (function(){
 
-	angular.module('configApp',[
-		'routeConfig'
-	]);
+    angular.module('configApp',[
+      'routeConfig',
+      'contentFullpageConfig'
+    ]);
 
 })();

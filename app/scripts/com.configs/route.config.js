@@ -12,26 +12,26 @@
 
 (function () {
 
-	var routeConfig = function ($stateProvider, $urlRouterProvider,$locationProvider) {
-		$urlRouterProvider.otherwise('/');
+    var routeConfig = function ($stateProvider, $urlRouterProvider,$locationProvider) {
+      $urlRouterProvider.otherwise('/');
 
-		$locationProvider.html5Mode({
-			enabled:true,
-			requireBase:false
-		});
+      $locationProvider.html5Mode({
+        enabled:true,
+        requireBase:false
+      });
 
-		$stateProvider
-			.state('main', {
-				url: '/',
-				templateUrl: 'views/com.wb.common.content/content.html',
-				controller: 'contentCtrl',
-				controllerAs:'content'
-			});
-	};
+      $stateProvider
+        .state('main', {
+          url: '/',
+          templateUrl: 'views/com.wb.common.content/content.html',
+          controller: 'contentCtrl',
+          controllerAs:'content'
+        });
+    };
 
-	routeConfig.$inject = ['$stateProvider', '$urlRouterProvider','$locationProvider'];
+    routeConfig.$inject = ['$stateProvider', '$urlRouterProvider','$locationProvider'];
 
-	angular.module('routeConfig', [])
-		.config(routeConfig);
+    angular.module('routeConfig', [])
+      .config(routeConfig);
 
 })();

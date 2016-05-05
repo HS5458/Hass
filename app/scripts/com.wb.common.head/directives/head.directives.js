@@ -12,23 +12,24 @@
 
 (function(){
 
-	var headNavCtrl = function () {
+    var headNavCtrl = function () {
 
-	};
+    };
 
-	headNavCtrl.$inject = [];
+    headNavCtrl.$inject = [];
 
-	var header = function(){
-		return {
-			restrict:'A',
-			templateUrl:'views/com.wb.common.head/head.html',
-			controller:headNavCtrl,
-			controllerAs:'headNav'
-		}
-	};
+    var header = function(){
+      return {
+        restrict:'A',
+        templateUrl:'views/com.wb.common.head/head.html',
+        controller:headNavCtrl,
+        controllerAs:'headNav'
+      }
+    };
 
-	header.$inject = [];
+    header.$inject = [];
 
-	angular.module('headerDirective',[])
-		.directive('header',header);
+    angular.module('headerDirective',[])
+      .directive('header',header)
+      .controller('headNavCtrl',headNavCtrl);
 })();
