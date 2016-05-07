@@ -5,6 +5,17 @@
     <div class="name-wb">
       <span>Hass</span>
     </div>
+    <div class="menu-icon visible-sm visible-xs" ng-click="head.menuToggle($event)">
+        <img src="../../images/com.wb.icon/menu.png" alt="图片加载失败">
+    </div>
+    <div class="menu-list visible-sm visible-xs">
+        <ul ng-class="{'headShow':head.isHeadShow}">
+            <li>个人主页</li>
+            <li>随笔博客</li>
+            <li>经验分享</li>
+            <li>关于</li>
+        </ul>
+    </div>
     <div class=" visible-lg visible-md">
         <div id="nav-wb">
             <ul>

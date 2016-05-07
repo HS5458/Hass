@@ -13,18 +13,27 @@
 (function(){
 
     var headNavCtrl = function () {
+        var _self = this;
 
+        /**
+         *  头部右边导航栏的显示或隐藏变化
+         * @param e
+         */
+        _self.menuToggle = function(e){
+            e.stopPropagation();
+            _self.isHeadShow = (_self.isHeadShow) ? false : true;
+        }
     };
 
     headNavCtrl.$inject = [];
 
     var header = function(){
-      return {
-        restrict:'A',
-        templateUrl:'views/com.wb.common.head/head.html',
-        controller:headNavCtrl,
-        controllerAs:'headNav'
-      }
+        return {
+          restrict:'A',
+          templateUrl:'views/com.wb.common.head/head.html',
+          controller:headNavCtrl,
+          controllerAs:'head'
+        }
     };
 
     header.$inject = [];
