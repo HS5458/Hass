@@ -274,15 +274,22 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
-    // cssmin: {
-    //   dist: {
-    //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
-    //         '.tmp/styles/{,*/}*.css'
-    //       ]
-    //     }
-    //   }
-    // },
+    cssmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true,
+          conservativeCollapse: true,
+          collapseBooleanAttributes: true,
+          removeCommentsFromCDATA: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>',
+          src: 'styles/{,*/}*.css',
+          dest: '<%= yeoman.dist %>'
+        }]
+      }
+    },
     // uglify: {
     //   dist: {
     //     files: {
@@ -328,8 +335,8 @@ module.exports = function (grunt) {
         },
         files: [{
           expand: true,
-          cwd: '<%= yeoman.dist %>',
-          src: ['*.html'],
+          cwd: '<%= yeoman.app %>',
+          src: 'views/{,*/}*.html', //['*.html']
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -338,7 +345,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'workspaceApp',
+          module: 'hassApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
@@ -481,3 +488,4 @@ module.exports = function (grunt) {
     'build'
   ]);
 };
+
