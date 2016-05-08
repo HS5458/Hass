@@ -8,13 +8,14 @@
 #web_wb .section .title{
   position:relative;
   top:50px;
+  left:0;
   width:100%;
   height:30px;
   color:white;
   font-size:30px;
   line-height: 30px;
   text-align: center;
-  z-index:3;
+  z-index:0;
 }
 /*section1*/
 #web_wb .page1 .page1-lm{
@@ -73,6 +74,7 @@
     letter-spacing: 5px;
 }
 /*section2*/
+/*大屏幕*/
 #web_wb .page2 .row-lg{
     width: 100%;
     height:100%;
@@ -135,6 +137,96 @@
     z-index:1;
 }
 #web_wb .page2 .row-lg .kills .flip:hover .back{
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  z-index:2;
+}
+/*其他大小的屏幕*/
+#web_wb .page2 .row-mdx-top{
+    height:55%;
+}
+#web_wb .page2 .row-mdx-bottom{
+  height:45%;
+}
+#web_wb .page2 .row-mdx-top .kills,
+#web_wb .page2 .row-mdx-bottom .kills{
+    height:100%;
+}
+  /*定位左右两边容器的位置*/
+#web_wb .page2 .row-mdx-top .left .flip,
+#web_wb .page2 .row-mdx-bottom .left .flip{
+    position: absolute;
+    top:50%;
+    left:20%;
+    transform:translateY(-50%);
+}
+#web_wb .page2 .row-mdx-top .right .flip,
+#web_wb .page2 .row-mdx-bottom .right .flip{
+  position: absolute;
+  top:50%;
+  right:20%;
+  transform:translateY(-50%);
+}
+  /*初始化动画属性*/
+#web_wb .page2 .row-mdx-top .kills .flip,
+#web_wb .page2 .row-mdx-bottom .kills .flip{
+  width:250px;
+  height:250px;
+  border-radius: 25px;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+  /*正面属性+翻转前属性*/
+#web_wb .page2 .row-mdx-top .kills .flip .front,
+#web_wb .page2 .row-mdx-bottom .kills .flip .front{
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height:100%;
+  color:white;
+  font-size:30px;
+  text-align:center;
+  line-height:250px;
+  background-color:#1b6d85;
+  transform:rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: 0.8s ease-out;
+  z-index:1;
+  backface-visibility: hidden;
+}
+  /*背面属性+翻转前属性*/
+#web_wb .page2 .row-mdx-top .kills .flip .back,
+#web_wb .page2 .row-mdx-bottom .kills .flip .back{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+    color:white;
+    font-size:17px;
+    padding : 10px 0 0 10px;
+    text-align: left;
+    background-color:#1b6d85;
+    transform:rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: 0.8s ease-out;
+    z-index:2;
+    backface-visibility: hidden;
+}
+  /*hover时触发翻转后的属性*/
+#web_wb .page2 .row-mdx-top .kills .flip:hover .front,
+#web_wb .page2 .row-mdx-bottom .kills .flip:hover .front{
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  z-index:1;
+}
+#web_wb .page2 .row-mdx-top .kills .flip:hover .back,
+#web_wb .page2 .row-mdx-bottom .kills .flip:hover .back{
   transform: rotateY(0deg);
   -webkit-transform: rotateY(0deg);
   z-index:2;
