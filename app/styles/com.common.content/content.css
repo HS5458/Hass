@@ -231,3 +231,52 @@
   -webkit-transform: rotateY(0deg);
   z-index:2;
 }
+/*section3*/
+#web_wb .page3 .works{
+  height:100%;
+}
+#web_wb .page3 .works .demo{
+  position: relative;
+  top:50px;
+  left: 50%;
+  transform: translateX(-40%);
+  -webkit-transform: translateX(-40%);
+  width:1000px;
+  height:300px;
+}
+#web_wb .page3 .works .demo ul{
+  list-style-type: none;
+  height:100%
+}
+#web_wb .page3 .works .demo ul li{
+  float:left;
+  width:200px;
+  padding:25px;
+  height:100%;
+}
+#web_wb .page3 .works .demo ul li .show{
+  width:100%;
+  height:20%;
+  font-size:25px;
+  font-family: 'trebuchet ms', verdana, arial;
+  line-height:45px;
+  text-align: center;
+  color:white;
+  background-color:#1b6d85;
+}
+#web_wb .page3 .works .demo ul li .show-list{
+  width:100%;
+  height:80%;
+  background-color:rgba(0, 153, 204, 0.5);
+}
+#web_wb .page3 .works .demo ul li .show-list p{
+  color:white;
+  font-size:20px;
+  font-family: 'trebuchet ms', verdana, arial;
+  padding-top:2px;
+  text-align: center;
+
+}
+#web_wb .page3 .works .demo ul li .show-list p a{
+  text-decoration: none;
+}
