@@ -207,11 +207,90 @@
         </div>
     </div>
     <div class="section page4">
-        <div class="title">
-            个人经历
-            <hr>
+        <div class="experience">
+            <div class="pre">
+              <img src="../../images/com.wb.icon/pre.png" alt="">
+            </div>
+            <div class="exp">
+              <ul>
+                <li>
+                    <div class="soho">
+                        <h1>SOHO中国(2014.08 - 2015.02)</h1>
+                        <p>1. 参与BI报表开发与维护</p>
+                        <p>2. 将HTML,CSS,JS语言嵌入BI中进行页面开发</p>
+                        <p>3. 将Echarts嵌入BI中进行报表开发</p>
+                        <p>4. 锻炼了前端页面开发</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="mbp">
+                        <h1>MBP(2015.03 - 2016.05)</h1>
+                        <p>1. 参与ERP系统开发与维护</p>
+                        <p>2. 参与前端静态页面开发进行宣传,期间使用了AngularJS和grunt</p>
+                        <p>3. 参与重构页面,进行响应式布局，期间使用了Bootstrap和JQuery</p>
+                        <p>4. 业余期间还制作了杀人游戏,回归自然,前端鸟等项目</p>
+                    </div>
+                </li>
+              </ul>
+            </div>
+            <div class="next">
+              <img src="../../images/com.wb.icon/next.png" alt="">
+            </div>
         </div>
-
     </div>
 </div>
-
+<style>
+    #web_wb .page4 .experience{
+        position: relative;
+        left: 0;
+        top:0;
+        width: 100%;
+        height:100%;
+    }
+    #web_wb .page4 .experience .pre{
+        position: absolute;
+        top:50%;
+        left:20%;
+        width:4.2rem;
+        height:4.2rem;
+        transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+        cursor:pointer;
+    }
+    #web_wb .page4 .experience .pre img{
+        width:100%;
+        height:100%;
+    }
+    #web_wb .page4 .experience .next{
+        position: absolute;
+        top:50%;
+        right:20%;
+        width:4.2rem;
+        height:4.2rem;
+        transform:translateY(-50%);
+        -webkit-transform:translateY(-50%);
+       cursor:pointer;
+    }
+    #web_wb .page4 .experience .next img{
+        width:100%;
+        height:100%;
+    }
+    #web_wb .page4 .experience .exp{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        -webkit-transform:translate(-50%,-50%);
+        width:50%;
+        height:30rem;
+        background-color: #1b6d85;
+    }
+    #web_wb .page4 .experience .exp ul{
+        list-style-type: none;
+        overflow: hidden;
+    }
+    #web_wb .page4 .experience .exp ul li{
+        width:100%;
+        float: left;
+    }
+</style>
