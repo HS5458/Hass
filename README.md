@@ -110,3 +110,169 @@
     
 ## 2016年5月15号
     终于到北京了！明天加油继续做！！
+
+## 2016年5月16号
+    研究了JavaScript对象继承
+*   老版的有5中继承方式
+    *   使用对象冒充实现继承(该种方式可以实现多继承)
+        function Parent(firstname)
+        {
+            this.fname=firstname;
+            this.age=40;
+            this.sayAge=function()
+            {
+                console.log(this.age);
+            }
+        }
+        function Child(firstname)
+        {
+            this.parent=Parent;
+            this.parent(firstname);
+            delete this.parent;
+            this.saySomeThing=function()
+            {
+                console.log(this.fname);
+                this.sayAge();
+            }
+        }
+        var mychild=new  Child("李");
+        mychild.saySomeThing();
+     *  采用call方法改变函数上下文实现继承(该种方式不能继承原型链)
+              实现原理：改变函数内部的函数上下文this，使它指向传入函数的具体对象
+        function Parent(firstname)
+        {
+            this.fname=firstname;
+            this.age=40;
+            this.sayAge=function()
+            {
+                console.log(this.age);
+            }
+        }
+        function Child(firstname)
+        {
+
+            this.saySomeThing=function()
+            {
+                console.log(this.fname);
+                this.sayAge();
+            }
+           this.getName=function()
+           {
+               return firstname;
+           }
+
+        }
+        var child=new Child("张");
+        Parent.call(child,child.getName());
+        child.saySomeThing();
+
+      *     使用Apply方法改变函数上下文实现继承(该种方式不能继承原型链)
+            实现原理：改变函数内部的函数上下文this，使它指向传入函数的具体对象
+        function Parent(firstname)
+        {
+            this.fname=firstname;
+            this.age=40;
+            this.sayAge=function()
+            {
+                console.log(this.age);
+            }
+        }
+        function Child(firstname)
+        {
+
+            this.saySomeThing=function()
+            {
+                console.log(this.fname);
+                this.sayAge();
+            }
+            this.getName=function()
+            {
+                return firstname;
+            }
+
+        }
+        var child=new Child("张");
+        Parent.apply(child,[child.getName()]);
+        child.saySomeThing();
+       *    采用原型链的方式实现继承
+            实现原理：使子类原型对象指向弗雷的实例以实现继承，即重写类的原型，弊端是不能直接实现多继承
+        function Parent()
+        {
+
+            this.sayAge=function()
+            {
+                console.log(this.age);
+            }
+        }
+        function Child(firstname)
+        {
+            this.fname=firstname;
+            this.age=40;
+            this.saySomeThing=function()
+            {
+                console.log(this.fname);
+                this.sayAge();
+            }
+        }
+
+        Child.prototype=new  Parent();
+        var child=new Child("张");
+        child.saySomeThing();
+      *     采用混合模式实现继承
+        function Parent()
+        {
+
+            this.sayAge=function()
+            {
+                console.log(this.age);
+            }
+        }
+
+        Parent.prototype.sayParent=function()
+        {
+           alert("this is parentmethod!!!");
+        }
+
+        function Child(firstname)
+        {
+            Parent.call(this);
+            this.fname=firstname;
+            this.age=40;
+            this.saySomeThing=function()
+            {
+                console.log(this.fname);
+                this.sayAge();
+            }
+        }
+
+        Child.prototype=new  Parent();
+        var child=new Child("张");
+        child.saySomeThing();
+        child.sayParent();
+*   最新出来的实现继承的方式是：Object.create()
+        function origObject(){
+            this.val1 = 'a';
+            this.val2 = 'b';
+        }
+        origObject.prototype.returnVal1 = function(){
+            return this.val1;
+        }
+        origObject.prototype.returnValu2 = function(){
+            return this.val2;
+        }
+        function newObject(){
+            this.val3 = 'c';
+            origObject.call(this);
+        }
+
+        newObject.prototype = Object.create(origObject.prototype);
+        newObject.prototype.constructor = newObject;
+
+        newObject.prototype.getValues = function(){
+            return this.val1 + " " + this.val2 + " " + this.val3;
+        }
+        var obj = new newObject();
+        console.log(obj instanceof newObject); //true
+        console.log(obj instanceof origObject);//true
+
+        console.log(obj.getValues()); "a b c"
